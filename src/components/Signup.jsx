@@ -1,21 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import LoginComponents from "./LoginComponents";
 import Nav from "./Nav";
 
-function Login() {
+function Signup() {
   return (
     <>
-      <Nav />
+      <Nav login="Log In" />
       <LoginComponents
-        title={"Log in with your email"}
+        steps={" step 1 of 3"}
+        title={"Enter your email address"}
         para={
           "You will use this email and password to log into your Disney+ account to watch your favourite shows and movies."
         }
-        SignUp={"Sign Up"}
-        NewToDisney={"New to Disney+? "}
-        bluebutton={"Continue"}
-        destination="/"
+        destination="/Password"
+        bluebutton="Agree & Continue"
         placeholder="Email"
         type="email"
       />
@@ -23,4 +22,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default Signup;

@@ -5,3 +5,13 @@
 .login__Height {
   height: calc(100vh - 228px);
 }
+
+.global__Container {
+  padding: 80px;
+}
+
+.home__Text {
+  font-size: 18px;
+  color: #c0c0c0;
+  line-height: 28px;
+}
